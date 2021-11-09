@@ -4,7 +4,7 @@
       requires: 'widget,dialog',
       icons: 'btgrid',
       init: function(editor) {
-       var maxGridColumns = 12;
+       var maxGridColumns = editor.config.btgrid_maxGridColumns || 12 ;
        var lang = editor.lang.btgrid;
 
        CKEDITOR.dialog.add('btgrid',  this.path + 'dialogs/btgrid.js');
